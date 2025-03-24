@@ -29,45 +29,17 @@ It allows **admins, vendors, and clients** to manage products, place orders, and
 ```
 /magasin_project
   ├── /controllers
-  │   ├── AuthController.php      # Handles authentication (login, register)
-  │   ├── ProductController.php   # Manages products (CRUD operations)
-  │   ├── OrderController.php     # Handles order placement and tracking
-  │   ├── UserController.php      # Manages user accounts
-  │   └── CartController.php      # Manages shopping cart actions
   ├── /models
-  │   ├── User.php                # User model (clients, vendors, admins)
-  │   ├── Product.php             # Product model
-  │   ├── Order.php               # Order model
-  │   ├── Cart.php                # Cart model
-  │   └── connection.php          # Database connection (PDO)
   ├── /views
   │   ├── /partials               # Shared components (header, footer)
-  │   │   ├── header.php
-  │   │   └── footer.php
   │   ├── /auth                   # Authentication pages
-  │   │   ├── login.php
-  │   │   └── register.php
   │   ├── /admin                  # Admin dashboard and management
-  │   │   ├── dashboard.php
-  │   │   ├── list_users.php
-  │   │   └── sales_report.php
   │   ├── /vendeur                # Vendor dashboard and product management
-  │   │   ├── dashboard.php
-  │   │   ├── list_products.php
-  │   │   ├── add_product.php
-  │   │   └── edit_product.php
-  │   ├── /client                 # Client pages (cart, orders)
-  │   │   ├── dashboard.php
-  │   │   ├── list_products.php
-  │   │   ├── cart.php
-  │   │   ├── checkout.php
-  │   │   ├── track_order.php
-  │   │   └── order_history.php
+  │   ├── /client                 # Client pages
   │   └── home.php                # Home page (product listing)
   ├── index.php                   # Redirects to home.php
   ├── /images                     # Stores uploaded product images
   ├── /uploads                    # Stores other uploaded files
-  ├── .env                        # Environment variables for database connection
   ├── .htaccess                   # Apache configuration file
   └── README.md                    # Documentation file
 ```
