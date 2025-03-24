@@ -15,7 +15,7 @@
                 <li><a href="cart.php" class="hover:text-yellow-400">Panier (3)</a></li>
                 <li><a href="orders.php" class="hover:text-yellow-400">Commandes</a></li>
                 <?php if (isset($_SESSION['user'])): ?>
-                    <li><a href="logout.php" class="hover:text-yellow-400">Déconnexion</a></li>
+                    <li><a href="../logout.php" class="hover:text-yellow-400">Déconnexion</a></li>
                 <?php else: ?>
                     <li><a href="auth/login.php" class="hover:text-yellow-400">Connexion</a></li>
                 <?php endif; ?>
